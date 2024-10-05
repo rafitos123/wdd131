@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Henrique Antunes">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Rafael Henrique Antunes - Home Page that contain information about me and my country.
+        It's possible to view the last modified information.">
+    <link rel="stylesheet" href="styles/country-large.css">
+    <link rel="stylesheet" href="styles/country.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script defer src="scripts/country.js"></script>
+    
+    <title>WDD 131 - Dynamic Web Fundamentals - Rafael Henrique Antunes</title>
+</head>
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/tucano-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/tucano-medium.webp" media="(min-width: 550px)">
+                <img src="images/tucano.webp" alt="Tucano Brazil">
+            </picture>
+        </div>
+        
+        <div class="card-data card min">
+            <div class="container">
+                <h2>Data</h2><br>
+                <ul>
+                    <li><strong>Area: </strong>587,041 sq km</li>
+                    <li><strong>Population: </strong>27,691,018</li>
+                    <li><strong>Capital: </strong>Antananarivo</li>
+                    <li><strong>Languages: </strong>Malagasy, French</li>
+                    <li><strong>Currency: </strong> Malagasy Ariary</li>
+                    <li><strong>Time Zone: </strong>UTC+3</li>
+                    <li><strong>Calling Code: </strong> +261</li>
+                    <li><strong>Internet TLD: </strong>.mg</li>
+                  </ul>
+            </div>
+        </div>
+              
+        <div class="card-weather card min">
+            <div class="container">
+                <h2>Weather</h2><br>
+                <ul>
+                  <li><strong>Temperature:</strong> 10°C</li>
+                  <li><strong>Conditions: </strong>Partly Cloudy</li>
+                  <li><strong>Wind: </strong>5 km/h</li>
+                  <li><strong>Wind Chill: </strong>9.8°C</li>
+                </ul>
+            </div>
+            </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🍁 Rafael Henrique Antunes 🍁 Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
