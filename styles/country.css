@@ -8,11 +8,16 @@
 }
 
 :root {
-    background: #00296b;
+    --main-color: #004b23;
+    --background-color: #00296b;
   }
 
+  body{
+    background-color: var(--background-color);
+}
+
 header {
-    background-color: #004b23;
+    background-color: var(--main-color);
     color: white;
     text-align: center;
     justify-content: center;
@@ -44,7 +49,7 @@ ul {
 
 
 footer {
-	background-color: #004b23;
+	background-color:  var(--main-color);
 	color: white;
 	text-align: center;
 	
