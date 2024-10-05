@@ -57,6 +57,9 @@ header {
         right: 5%;
     }
     
+    strong {
+        font-weight: bold;
+    }
     
     
     h2{

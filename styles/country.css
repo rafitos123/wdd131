@@ -28,7 +28,9 @@ main {
     object-fit: cover;
   }
 
-
+  strong {
+    font-weight: bold;
+}
 
 
 ul {
