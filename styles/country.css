@@ -7,15 +7,15 @@
 	box-sizing: border-box;
 }
 
+:root {
+    background: #00296b;
+  }
+
 header {
     background-color: #004b23;
     color: white;
     text-align: center;
     justify-content: center;
-}
-
-body{
-    background-color: #00296b;
 }
 
 main {
@@ -66,24 +66,4 @@ section {
     
     }
     
-    
-    .card-weather h2 {
-        position: relative;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center; 
-        text-align: center; 
-    }
-    .card-weather h2::after {
-        content: '';
-        display: block;
-        width: 80px;  
-        height: 80px;
-        margin-left: 10px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url('../images/sun.svg');
-    }
-
 }

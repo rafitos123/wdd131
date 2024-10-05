@@ -7,6 +7,10 @@
 	box-sizing: border-box;
 }
 
+:root {
+    background: #00296b;
+  }
+
 header {
     background-color: #004b23;
     color: white;
@@ -15,10 +19,9 @@ header {
     font-size: 30px;
 }
 
+
+
 @media only screen and (min-width: 700px) {
-    body{
-        background-color: #00296b;
-    }
     
     main {
         margin-top: 20px;
@@ -98,5 +101,9 @@ header {
         
         .container {
             padding: 2px 16px;
+        }
+
+        .image-svg {
+            display: none;
         }
 }
