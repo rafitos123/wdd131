@@ -16,21 +16,13 @@ body{
     --background-color: #00296b;
   }
 
-header {
-    background-color: var(--main-color);
-    color: white;
-    text-align: center;
-    justify-content: center;
-    font-size: 30px;
+main {
+    margin-top: 20px;
+    position: relative;
 }
 
-
-
 @media only screen and (min-width: 700px) {
-    
-    main {
-        margin-top: 20px;
-    }
+   
     
     .hero img {
         position: relative;
@@ -38,14 +30,6 @@ header {
         height: 100%;
         object-fit: cover;
       }
-    
-    footer {
-        background-color: var(--main-color);
-        color: white;
-        text-align: center;
-        
-    }
-    
 
     .card{
         position: absolute;
@@ -64,11 +48,6 @@ header {
         bottom: 5%;
         right: 5%;
     }
-    
-    strong {
-        font-weight: bold;
-    }
-    
     
     h2{
         padding: 5px;
@@ -90,15 +69,6 @@ header {
         background-image: url('../images/sun.svg');
     }
 
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        ul li {
-            margin: 5px 0;
-        }
         
         .card:hover{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
