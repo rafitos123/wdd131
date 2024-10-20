@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Henrique Antunes">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Rafael Henrique Antunes - Forme Page to review products.
+        It's possible to view the last modified information.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
+    <title>WDD 131 - Dynamic Web Fundamentals - Rafael Henrique Antunes - Form Review</title>
+</head>
+<body>
+    <header><h1>Product Review</h1></header>
+    <main>
+
+        <div>
+            <form action="/review.html" method="get">
+            <label for="pname">Product Name:</label><br>
+
+                <select name="product" id="product" required>
+                <option value="Select">Select a Product...</option>
+                </select><br>
+            
+                <br>
+                <p>Overall Review:</p>
+                <div class="rating-container">
+                   
+                    <label for="s1">
+                        &star;
+                        <input type="radio" id="s1" name="rating" value="1">
+                    </label>
+                    <label for="s2">
+                        &star; &star;
+                        <input type="radio" id="s2" name="rating" value="2">
+                    </label>
+                    <label for="s3">
+                        &star; &star; &star;
+                        <input type="radio" id="s3" name="rating" value="3">
+                    </label>
+                    <label for="s4">
+                        &star; &star; &star; &star;
+                        <input type="radio" id="s4" name="rating" value="4">
+                    </label>
+                    <label for="s5">
+                        &star; &star; &star; &star; &star;
+                        <input type="radio" id="s5" name="rating" value="5">
+                    </label>
+                </div>
+              
+                
+                
+                  <label>Date of installation</label><br>
+                  <input type="date"><br><br>
+
+                  <label for="features">Which features did you find useful in the product? Check all that apply</label><br><br>
+                  <input type="checkbox" id="feature1" name="feature1" value="Durability">
+                  <label for="feature1"> Durability</label><br>
+                  <input type="checkbox" id="feature2" name="feature2" value="Ease">
+                  <label for="vehicle2"> Ease of Use</label><br>
+                  <input type="checkbox" id="feature3" name="feature3" value="Performance">
+                  <label for="feature3"> Performance</label><br>
+                  <input type="checkbox" id="feature4" name="feature4" value="Design">
+                  <label for="feature4"> Design</label><br><br>
+
+                  <label for="review">Written Review: <span class="spanColor">(Optional)</span></label><br>
+                  <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
+                  <label for="name">Your name: <span class="spanColor">(Optional)</span></label><br>
+                  <input type="text" name="name"><br><br>
+            <input type="submit" value="Post Review">
+          </form>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🍁 Rafael Henrique Antunes 🍁 Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
