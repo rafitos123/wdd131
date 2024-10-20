@@ -20,9 +20,9 @@
 
         <div>
             <form action="/review.html" method="get">
-            <label for="pname">Product Name:</label><br>
+            <label>Product Name:</label><br>
 
-                <select name="product" id="product" required>
+                <select name="product" id="product">
                 <option value="Select">Select a Product...</option>
                 </select><br>
             
@@ -32,23 +32,23 @@
                    
                     <label for="s1">
                         &star;
-                        <input type="radio" id="s1" name="rating" value="1">
+                        <input type="radio" id="s1" name="rating" value="rating" required>
                     </label>
                     <label for="s2">
                         &star; &star;
-                        <input type="radio" id="s2" name="rating" value="2">
+                        <input type="radio" id="s2" name="rating" value="rating" required>
                     </label>
                     <label for="s3">
                         &star; &star; &star;
-                        <input type="radio" id="s3" name="rating" value="3">
+                        <input type="radio" id="s3" name="rating" value="rating" required>
                     </label>
                     <label for="s4">
                         &star; &star; &star; &star;
-                        <input type="radio" id="s4" name="rating" value="4">
+                        <input type="radio" id="s4" name="rating" value="rating" required>
                     </label>
                     <label for="s5">
                         &star; &star; &star; &star; &star;
-                        <input type="radio" id="s5" name="rating" value="5">
+                        <input type="radio" id="s5" name="rating" value="rating" required>
                     </label>
                 </div>
               
@@ -57,11 +57,11 @@
                   <label>Date of installation</label><br>
                   <input type="date"><br><br>
 
-                  <label for="features">Which features did you find useful in the product? Check all that apply</label><br><br>
+                  <label>Which features did you find useful in the product? Check all that apply</label><br><br>
                   <input type="checkbox" id="feature1" name="feature1" value="Durability">
                   <label for="feature1"> Durability</label><br>
                   <input type="checkbox" id="feature2" name="feature2" value="Ease">
-                  <label for="vehicle2"> Ease of Use</label><br>
+                  <label for="feature2"> Ease of Use</label><br>
                   <input type="checkbox" id="feature3" name="feature3" value="Performance">
                   <label for="feature3"> Performance</label><br>
                   <input type="checkbox" id="feature4" name="feature4" value="Design">
@@ -69,7 +69,7 @@
 
                   <label for="review">Written Review: <span class="spanColor">(Optional)</span></label><br>
                   <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
-                  <label for="name">Your name: <span class="spanColor">(Optional)</span></label><br>
+                  <label>Your name: <span class="spanColor">(Optional)</span></label><br>
                   <input type="text" name="name"><br><br>
             <input type="submit" value="Post Review">
           </form>
