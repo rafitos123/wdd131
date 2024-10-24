@@ -1,0 +1,166 @@
+:root {
+    --nav-color: #8D0801;
+    --footer-color: #001427;
+    --sub-nav-color: #BF0603;
+    --form-color: #F4D58D;
+    --other-color: #708D81;
+
+}
+
+@media only screen and (min-width: 700px) {
+    .hero img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card {
+        position: absolute;
+        color: white;
+        padding: 15px;
+        font-size: 30px;
+    }
+
+    .button {
+        border-radius: 20px;
+        padding: 5px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        margin: 4px 2px;
+        cursor: pointer;
+        color: black;
+        background-color: #F4D58D;
+    }
+
+    .card-hero {
+        top: 10%;
+        left: 10%;
+    }
+
+    .animation {
+        width: 300px;
+        position: relative;
+        animation: move 5s infinite alternate;
+    }
+
+    @keyframes move {
+        0% {
+            top: 0;
+        }
+        100% {
+            top: 65px; 
+        }
+    }
+
+    .cardForm{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.815); 
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        
+      }
+
+    .card-form {
+        top: 20%;
+        right: 5%;
+        font-size: 30px;
+    }
+
+    input[type=text],[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type=submit] {
+        width: 100%;
+        background-color: var(--footer-color);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #08243f;
+      }
+
+  input[type=text],[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type=submit] {
+        width: 100%;
+        background-color: var(--footer-color);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #08243f;
+      }
+
+      img {
+        display: block;
+      }
+
+    .navigation {
+        display: flex; 
+    }
+
+    .navigation li {
+        display: inline-block;
+    }
+
+    nav {
+        display: flex; 
+        position: static; 
+        background-color: var(--nav-color); 
+        padding: 10px 20px; 
+        z-index: 1;
+    }
+
+    #menu {
+        display: none; 
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap: 25px;
+        place-items: center;
+    }
+
+    footer {
+        background-color: var(--footer-color);
+        color: white;
+        text-align: center;
+    }
+}
+
