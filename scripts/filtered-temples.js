@@ -145,9 +145,6 @@ small.addEventListener("click", () => {
 CreateTemple([smallestTemple]);
 });
 
-home.addEventListener("click", () => {
-  CreateTemple(temples);
-});
 
 
 

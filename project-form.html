@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rafael Henrique Antunes">
     <meta name="description"
-        content="WDD 131 - Dynamic Web Fundamentals - Rafael Henrique Antunes - Page that contain information about Brazil.
-        It's possible to view the last modified information and the temperature.">
+        content="WDD 131 - Dynamic Web Fundamentals - Rafael Henrique Antunes - Form Page to receive a hero Poster.">
     <link rel="stylesheet" href="styles/project-large.css">
     <link rel="stylesheet" href="styles/project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +21,9 @@
         <a id="menu" href="#"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><a href="project-home.html">Home</a></li>
+                <li><a href="project-gallery.html">Gallery</a></li>
+                <li><a href="project-form.html">Subscribe</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +44,7 @@
               
         <div class="card-form cardForm min">
             <div class="">
-                <h2>Do you want to receive more?</h2><br>
+                <h2>What Poster do you want to receive?</h2><br>
                 <form action="/action_page.php">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
@@ -57,14 +54,12 @@
                     <label for="lname">E-mail</label>
                     <input type="email" id="email" name="email" placeholder="exemple@gmail.com."><br>
                 
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                      <option value="australia">Australia</option>
-                      <option value="canada">Canada</option>
-                      <option value="usa">USA</option>
+                    <label for="country">Hero poster</label>
+                    <select id="heroSelect">
+                      
                     </select>
                   
-                    <input type="submit" value="Subscribe">
+                    <input type="submit" value="ASSEMBLE!">
                   </form>
             </div>
         </div>

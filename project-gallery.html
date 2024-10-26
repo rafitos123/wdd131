@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rafael Henrique Antunes">
     <meta name="description"
-        content="WDD 131 - Dynamic Web Fundamentals - Rafael Henrique Antunes - Home Page Hero Wiki">
+        content="WDD 131 - Dynamic Web Fundamentals - Rafael Henrique Antunes - Page that contain heroes Gallery">
     <link rel="stylesheet" href="styles/project-large.css">
     <link rel="stylesheet" href="styles/project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script defer src="scripts/project.js"></script>
     
-    <title>WDD 131 - Project - Hero Wiki Home</title>
+    <title>WDD 131 - Project - Hero Wiki Gallery</title>
 </head>
 <body>
     <header>
@@ -27,25 +27,15 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero.webp" media="(min-width: 1000px)">
-                <source srcset="images/hero.webp" media="(min-width: 550px)">
-                <img src="images/hero.webp" alt="Heroes" >
-            </picture>
+    <main class="mainBackgroud">
+        <h1>select a poster to receive</h1>
+        <select name="letter" id="letterSelect"></select>
+        <button id="showAll">Mostrar Todos</button>
+        <div class="containerCard" id="card3d">
+         
         </div>
         
-        <div class="card-hero card min">
-            <div>
-                <h2>Meet your favorite <br> 
-                    heroes here!</h2><br>
-                    <a href="project-gallery.html"><input type="button" class="button" value="Gallery"></a>
-                    
-
-            </div>
-        </div>
-              
+                     
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> 🍁 Rafael Henrique Antunes 🍁 Brazil</p>
